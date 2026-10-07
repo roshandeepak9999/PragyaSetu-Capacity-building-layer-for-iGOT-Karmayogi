@@ -1,3 +1,4 @@
+
 # PragyaSetu — Flask prototype
 
 A Flask app for India's Official Statistical System capacity-building
@@ -79,3 +80,6 @@ Open **http://127.0.0.1:5000**.
   course-catalogue/learner-analytics APIs.
 - **Not implemented:** the "Open in iGOT Karmayogi" button doesn't link
   anywhere real — call that out if judges ask.
+=======
+# PragyaSetu-Capacity-building-layer-for-iGOT-Karmayogi
+>>>>>>> 5e2fa5c9663fc6ffb8b3d8d0280673e31627fbd5
