@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PragyaSetu — Capacity building for the Official Statistical System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <div class="ss-root">
+    <header class="ss-header">
+      <div>
+        <span class="ss-brand-mark">PragyaSetu</span>
+        <span class="ss-brand-sub">Capacity building layer for iGOT Karmayogi &middot; Official Statistical System</span>
+      </div>
+      <div class="ss-officer-badge">
+        <div class="ss-officer-name" id="current-officer-name">—</div>
+        <div class="ss-officer-role" id="current-officer-role">—</div>
+        <div class="ss-session-line">Signed in as {{ username }} · <a href="{{ url_for('logout') }}">Log out</a></div>
+      </div>
+    </header>
+
+    <div class="ss-body">
+      <aside class="ss-sidebar">
+        <div class="ss-sidebar-label">Switch officer (demo)</div>
+        <ul class="ss-officer-list" id="officer-list"></ul>
+
+        <nav class="ss-tabs">
+          <button class="ss-tab is-active" data-tab="overview">Competency overview</button>
+          <button class="ss-tab" data-tab="learning">Recommended learning</button>
+          <button class="ss-tab" data-tab="quiz">Quiz generator</button>
+        </nav>
+      </aside>
+
+      <main class="ss-main">
+        <section id="tab-overview" class="ss-panel"></section>
+        <section id="tab-learning" class="ss-panel" hidden></section>
+        <section id="tab-quiz" class="ss-panel" hidden></section>
+      </main>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
